@@ -1,6 +1,6 @@
 {
-  "name": "redux-saga-router",
-  "version": "2.2.0",
+  "name": "@lt/redux-saga-router",
+  "version": "2.2.1",
   "description": "A router for Redux Saga",
   "main": "lib/index.js",
   "files": [
@@ -9,11 +9,12 @@
     "src"
   ],
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "rm -rf lib && babel src --out-dir lib",
     "check": "npm run lint && npm test",
     "clean": "rimraf lib",
     "lint": "eslint src __tests__",
     "prepublish": "npm run clean && npm run build",
+    "send": "yarn test && yarn build && cd lib && yarn publish",
     "test": "jest",
     "watch:test": "jest --watch"
   },
@@ -68,13 +69,13 @@
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "redux": "^3.6.0",
-    "redux-saga": "^0.16.0",
-    "redux-saga-test-plan": "^3.4.0",
+    "redux-saga": "1.0.4",
+    "redux-saga-test-plan": "4.0.0-beta.3",
     "rimraf": "^2.5.4",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1"
   },
   "peerDependencies": {
-    "redux-saga": ">=0.10.0 <0.17.0"
+    "redux-saga": ">=1.0.4"
   }
 }
