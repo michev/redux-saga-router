@@ -1,5 +1,5 @@
 {
-  "name": "@lt/redux-saga-router",
+  "name": "@michev/redux-saga-router",
   "version": "2.2.1",
   "description": "A router for Redux Saga",
   "main": "lib/index.js",

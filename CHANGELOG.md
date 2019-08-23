@@ -1,3 +1,9 @@
+## v2.2.1
+
+* Upgrade Redux Saga to v1.
+* Updated how `history` is included (Support for path `history/createBrowserHistory` will be removed).
+* Added builded code to the repo for quick usage - `lib/` folder.
+
 ## v2.2.0
 
 ## NEW - Array Routes
